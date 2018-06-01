@@ -75,3 +75,31 @@ body {
 .layer__top .layer__img {
   width: 43%;
 }
+
+.handle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 5px;
+  height: 100%;
+  background-color: #FDAB00;
+  z-index: 3;
+}
+
+.skewed .handle {
+  top: 50%;  
+  height: 200%;
+  transform: skew(-30deg) translateY(-50%);
+  transform-origin: top; 
+}
+
+.skewed .layer__top {
+  margin-left: -1000px;
+  width: calc(50vw + 1000px);
+  transform: skew(-30deg);
+}
+
+.skewed .layer__top .layer__wrap {
+  margin-left: 1000px;
+  transform: skew(30deg);
+}
