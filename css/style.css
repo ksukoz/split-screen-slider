@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.layer__wrap {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.layer__content {
+  position: absolute;
+  top: 50%;
+  width: 25%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.layer__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.layer__bottom {
+  z-index: 2;
+}
