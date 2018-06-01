@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 100%;
 }
 
 .slider {
@@ -21,7 +22,7 @@ body {
 .layer__wrap {
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 100vw;
   min-height: 55vw;
   overflow: hidden;
 }
@@ -31,17 +32,46 @@ body {
   top: 50%;
   width: 25%;
   text-align: center;
+  color: #eee;
   transform: translateY(-50%);
+}
+
+.layer__heading {
+  font-size: 2em;
 }
 
 .layer__img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 40%;
+  width: 35%;
   transform: translate(-50%, -50%);
 }
 
 .layer__bottom {
+  background-color: #222;
+  z-index: 1;
+}
+
+.layer__bottom .layer__content {
+  right: 5%;
+}
+
+.layer__bottom .layer__heading {
+  color: #FDAB00;
+}
+
+.layer__top {
+  width: 50%;
+  background-color: #eee;
   z-index: 2;
+}
+
+.layer__top .layer__content {
+  left: 5%;
+  color: #222;
+}
+
+.layer__top .layer__img {
+  width: 43%;
 }
